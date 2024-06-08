@@ -1,0 +1,124 @@
+*{
+    padding: 0; margin: 0; box-sizing: border-box; font-family: 'Times New Roman', Times, serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url('plane1.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav1{
+    width: 100%;
+    height: 50px;
+    color: white;
+    background: #062a42;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav1 i{
+    margin:0 5px;
+
+}
+.nav1 a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    background: #e67e22;
+    margin:0 5px;
+    border-radius: 8px;
+    transition: 0.4s;
+    
+}
+.nav2{
+    width: 100%;
+    height: 50px;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 80px;
+}
+
+.menu a{
+    text-decoration: none;
+    color:rgb(233, 225, 225);
+    font-size: 20px;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.txt{
+    max-width: 650px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+.txt span{
+letter-spacing: 5px;
+}
+.txt h1{
+    font-size: 3.5em;
+}
+.txt a{
+    position: relative;
+    color: aliceblue;
+    
+    background: transparent;
+    border: 1px;
+    text-decoration: none;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.txt a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    border: 1px solid #9c9797;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+.txt a:hover::before{
+    background-color: rgba(255,255,255,0.5);
+}
+
+.menu a::before{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 0%;
+height: 100%;
+border-bottom: 2px solid indianred;
+transition: 0.4s linear;
+
+}
+.menu a:hover::before{
+    width: 90%;
+
+}
+
+.reg a:hover{
+    
+background: transparent;
+border: 1px solid #e67e22;
+transition: 0.4s;
+    }
+    
